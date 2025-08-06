@@ -2,7 +2,7 @@ from django.db import models
 
 
 # Create your models here.
-
+#Primary Foreign Key - relationship 
 class Status(models.TextChoices):
     UNSTARTED = 'u', "Not started yet"
     ONGOING = 'o', "Ongoing"
