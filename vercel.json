@@ -5,7 +5,7 @@
       "use": "@vercel/python",
       "config": { 
         "maxLambdaSize": "15mb",
-        "runtime": "python3.9"
+        "runtime": "vercel-python@3.10"
       }
     }
   ],
@@ -14,5 +14,11 @@
       "src": "/(.*)",
       "dest": "myproject/wsgi.py"
     }
-  ]
+  ],
+    "functions": {
+    "myproject/wsgi.py": {
+      "runtime": "vercel-python@3.10",
+      "maxLambdaSize": "15mb"
+    }
+  }
 }
